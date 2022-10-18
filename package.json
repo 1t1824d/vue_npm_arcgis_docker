@@ -3,17 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "npm run copy && vue-cli-service serve",
-    "build": "npm run copy && vue-cli-service build",
+    "serve": "npm run copy&& vue-cli-service serve",
+    "build": "npm run copy&& vue-cli-service build",
     "copy": "ncp ./node_modules/@arcgis/core/assets ./public/assets",
-    "docker": "docker build . -t vue_npm_arcgis_image2 && docker run -d -p 3006:80 vue_npm_arcgis_image2"
+    "docker": "docker build . -t vue_npm_arcgis_image2 && docker run -d -p 3009:80 vue_npm_arcgis_image2"
   },
   "dependencies": {
     "@arcgis/core": "^4.22.2",
     "core-js": "^3.8.3",
     "element-ui": "^2.15.6",
-    "moment": "^2.29.1",
     "html2canvas": "^1.4.1",
+    "moment": "^2.29.1",
     "ncp": "^2.0.0",
     "vue": "^2.6.14",
     "vue-router": "^3.5.1",
